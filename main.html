@@ -1,16 +1,85 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Semantic Tables and Media</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: left;
+    }
+    table {
+      margin-bottom: 25px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Semantic Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Ritesh</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Hamza</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Sneha</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Section Heading -->
+  <h2>List of medias</h2>
+
+  <!-- Ordered List with Media Items -->
+  <ol>
+    <!-- Image Item -->
+    <li>
+      <img src="https://picsum.photos/id/123/200/300" alt="Random sample image from Picsum">
+    </li>
+
+    <!-- Video Item -->
+    <li>
+      <video width="320" height="240" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+
+    <!-- Audio Item -->
+    <li>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ol>
 
 </body>
+</html>
+
 
 </html>
